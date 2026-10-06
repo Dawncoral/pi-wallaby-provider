@@ -11,8 +11,9 @@ Open PowerShell in this folder (or download the two scripts) and run:
 powershell -ExecutionPolicy Bypass -File install.ps1 -ApiKey "sk-<one-key-per-machine>"
 ```
 
-If `-ApiKey` is omitted, the script prompts for it. Use **one key per machine**
-so usage stays attributable and revocable.
+If `-ApiKey` is omitted, the script prompts for it — each user signs up at
+[wallabytoken.com](https://wallabytoken.com) and creates their own key (trial
+credit included). One key per person/machine: attributable, capped, revocable.
 
 What it does:
 
@@ -38,8 +39,9 @@ Pre-existing system Node.js / Git for Windows are never touched.
 ## 中文速查（给装机同事）
 
 1. 把这两个文件拷到机器上（或同一文件夹）
-2. 右键 → 使用 PowerShell 运行 `install.ps1`，按提示粘贴这台机器的 key
-   （key 由 Wallaby 提供，一台机器一个，不要混用）
+2. 右键 → 使用 PowerShell 运行 `install.ps1`，按提示粘贴**你自己注册的 key**
+   （打开 wallabytoken.com 注册账号 → 控制台创建 API key；新账号有试用金。
+   一台机器用一个人的 key，不要多人共用）
 3. 看到绿色 “Done” 即完成；新开终端输入 `pi` 开始用
 4. 要删除：运行 `uninstall.ps1`（加 `-All` 连聊天记录一起删）
 5. 全程不需要管理员权限，不动系统目录，不影响电脑里其他软件
