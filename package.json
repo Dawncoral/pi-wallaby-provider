@@ -2,17 +2,25 @@
   "name": "pi-wallaby-provider",
   "version": "0.1.0",
   "description": "Wallaby (Kimi K3) provider for the pi coding agent — one-line install, pay-per-token API",
-  "keywords": ["pi-package", "pi-provider", "wallaby", "kimi-k3", "coding-agent"],
+  "keywords": [
+    "pi-package",
+    "pi-provider",
+    "wallaby",
+    "kimi-k3",
+    "coding-agent"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "extensions/index.ts",
   "pi": {
-    "extensions": ["./extensions/index.ts"]
+    "extensions": [
+      "./extensions/index.ts"
+    ]
   },
   "homepage": "https://wallabytoken.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dawncoral/pi-wallaby-provider"
+    "url": "git+https://github.com/Dawncoral/pi-wallaby-provider.git"
   },
   "engines": {
     "node": ">=18"
