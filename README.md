@@ -1,5 +1,7 @@
 # pi-wallaby-provider
 
+[![npm version](https://img.shields.io/npm/v/pi-wallaby-provider)](https://www.npmjs.com/package/pi-wallaby-provider) [![npm downloads](https://img.shields.io/npm/dm/pi-wallaby-provider)](https://www.npmjs.com/package/pi-wallaby-provider) [![license](https://img.shields.io/npm/l/pi-wallaby-provider)](https://github.com/Dawncoral/pi-wallaby-provider/blob/main/LICENSE)
+
 Use [Wallaby](https://wallabytoken.com)'s Kimi K3 in the [pi coding agent](https://github.com/earendil-works/pi) — one-line install, pay-per-token, no subscription.
 
 ## Install
@@ -33,7 +35,7 @@ pi --model wallaby/kimi-k3
 
 ## What you get
 
-| Model | Context | Max output | Pricing (per 1M tokens, promotional) |
+| Model | Context | Max output | Pricing (per 1M tokens, 10% off the official list) |
 |---|---|---|---|
 | `kimi-k3` | 1,048,576 | 131,072 | $2.70 in / $13.50 out / $0.27 cache hit |
 

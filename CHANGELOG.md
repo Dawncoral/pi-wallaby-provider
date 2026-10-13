@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 (2026-10-13)
+
+- Metadata/SEO pass: expanded npm keywords (`pi`, `cli`, `moonshot`, `kimi`);
+  README badges (npm version/downloads/license); pricing table wording aligned
+  with the standing "10% off the official list" positioning (was "promotional").
+  No code changes.
+
 ## 0.1.0+install (2026-10-06)
 
 - Add `install/` — one-click Windows fleet installer (`install.ps1`) and
