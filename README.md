@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/pi-wallaby-provider)](https://www.npmjs.com/package/pi-wallaby-provider) [![npm downloads](https://img.shields.io/npm/dm/pi-wallaby-provider)](https://www.npmjs.com/package/pi-wallaby-provider) [![license](https://img.shields.io/npm/l/pi-wallaby-provider)](https://github.com/Dawncoral/pi-wallaby-provider/blob/main/LICENSE)
 
-Use [Wallaby](https://wallabytoken.com)'s Kimi K3 in the [pi coding agent](https://github.com/earendil-works/pi) — one-line install, pay-per-token, no subscription.
+Use [Wallaby](https://wallabytoken.com)'s Kimi K3 and K3.1 Pro models in the [pi coding agent](https://github.com/earendil-works/pi) — one-line install, pay-per-token, no subscription.
 
 ## Install
 
@@ -30,14 +30,22 @@ Then pick the model:
 
 ```bash
 pi --model wallaby/kimi-k3
-# or inside pi: /model → Kimi K3 (Wallaby)
+pi --model wallaby/kimi-k3.1-pro
+pi --model wallaby/kimi-k3.1-pro-highspeed
+# or inside pi: /model → Kimi K3.1 Pro (Wallaby)
 ```
+
+## Model discovery
+
+With `WALLABY_API_KEY` set, the provider reads the gateway's `/models` and the public `pricing.json` at startup and registers whatever the endpoint currently serves. Models without a price entry are skipped. If the network or key is unavailable, it falls back to the static list below, so a fresh or offline session still works.
 
 ## What you get
 
 | Model | Context | Max output | Pricing (per 1M tokens, 10% off the official list) |
 |---|---|---|---|
 | `kimi-k3` | 1,048,576 | 131,072 | $2.70 in / $13.50 out / $0.27 cache hit |
+| `kimi-k3.1-pro` | 1,048,576 | 131,072 | $1.80 in / $9.00 out / $0.18 cache hit |
+| `kimi-k3.1-pro-highspeed` | 1,048,576 | 131,072 | $3.60 in / $18.00 out / $0.18 cache hit (2-3x speed) |
 
 ## No install alternative
 

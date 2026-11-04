@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0 (2026-11-05)
+
+- Add `kimi-k3.1-pro` and `kimi-k3.1-pro-highspeed`, with Highspeed priced at
+  2x fresh input/output and the same cached-read rate.
+- The extension factory is now async. With `WALLABY_API_KEY` set it reads the
+  gateway's `/models` and the public `pricing.json` at startup, so new models
+  appear after a restart without an npm release; ids without a price entry are
+  skipped. Any failure falls back to the three-model static list.
+- Provider display name is now "Wallaby" instead of "Wallaby (Kimi K3)".
+- Existing K3 entry and its price are unchanged.
+
 ## 0.1.1 (2026-10-13)
 
 - Metadata/SEO pass: expanded npm keywords (`pi`, `cli`, `moonshot`, `kimi`);

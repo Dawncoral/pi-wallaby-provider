@@ -1,7 +1,7 @@
 {
   "name": "pi-wallaby-provider",
-  "version": "0.1.1",
-  "description": "Wallaby (Kimi K3) provider for the pi coding agent — one-line install, pay-per-token API",
+  "version": "0.2.0",
+  "description": "Wallaby provider for the pi coding agent — Kimi K3, K3.1 Pro and K3.1 Pro Highspeed, pay-per-token",
   "keywords": [
     "pi",
     "pi-package",
@@ -11,7 +11,9 @@
     "wallaby",
     "kimi",
     "kimi-k3",
-    "moonshot"
+    "moonshot",
+    "kimi-k3.1-pro",
+    "kimi-k3.1-pro-highspeed"
   ],
   "license": "MIT",
   "type": "module",
