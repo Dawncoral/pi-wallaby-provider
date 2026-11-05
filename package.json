@@ -23,7 +23,7 @@
       "./extensions/index.ts"
     ]
   },
-  "homepage": "https://wallabytoken.com",
+  "homepage": "https://wallabytoken.com?utm_source=npm&utm_medium=readme&utm_campaign=pi-wallaby-provider",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dawncoral/pi-wallaby-provider.git"

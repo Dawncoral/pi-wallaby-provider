@@ -9,7 +9,7 @@
   appear after a restart without an npm release; ids without a price entry are
   skipped. Any failure falls back to the three-model static list.
 - Provider display name is now "Wallaby" instead of "Wallaby (Kimi K3)".
-- Existing K3 entry and its price are unchanged.
+- Update K3 pricing to $2.55 input / $12.75 output / $0.255 cache hit per 1M tokens, 15% off the official list.
 
 ## 0.1.1 (2026-10-13)
 

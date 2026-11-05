@@ -130,7 +130,6 @@ if ($LASTEXITCODE -ne 0) { Fail "pi-wallaby-provider install failed. See $LogFil
 if (-not $ApiKey) {
   Write-Host ""
   Write-Host "  Get your own key: https://wallabytoken.com (sign up, free trial credit included)"
-  Write-Host "  自己注册拿 key：打开 wallabytoken.com 注册，控制台里创建 API key"
   Write-Host ""
   $ApiKey = Read-Host "Paste your Wallaby API key (sk-...)"
 }
