@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 (2026-11-05)
+
+- Add GitHub Actions Trusted Publishing with OIDC. The workflow runs the
+  discovery smoke test and publishes on `v*` tags or manual dispatch, without
+  long-lived npm tokens. Runtime code and model metadata are unchanged.
+
 ## 0.2.0 (2026-11-05)
 
 - Add `kimi-k3.1-pro` and `kimi-k3.1-pro-highspeed`, with Highspeed priced at
