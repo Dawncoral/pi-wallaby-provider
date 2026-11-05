@@ -43,7 +43,7 @@ With `WALLABY_API_KEY` set, the provider reads the gateway's `/models` and the p
 
 | Model | Context | Max output | Pricing (per 1M tokens, 10% off the official list) |
 |---|---|---|---|
-| `kimi-k3` | 1,048,576 | 131,072 | $2.70 in / $13.50 out / $0.27 cache hit |
+| `kimi-k3` | 1,048,576 | 131,072 | $2.55 in / $12.75 out / $0.255 cache hit |
 | `kimi-k3.1-pro` | 1,048,576 | 131,072 | $1.80 in / $9.00 out / $0.18 cache hit |
 | `kimi-k3.1-pro-highspeed` | 1,048,576 | 131,072 | $3.60 in / $18.00 out / $0.18 cache hit (2-3x speed) |
 

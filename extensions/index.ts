@@ -44,7 +44,7 @@ const STATIC_MODELS: ModelSpec[] = [
     reasoning: true,
     input: ["text", "image"],
     ...KIMI_LIMITS,
-    cost: { input: 2.7, output: 13.5, cacheRead: 0.27, cacheWrite: 2.7 },
+    cost: { input: 2.55, output: 12.75, cacheRead: 0.255, cacheWrite: 2.55 },
   },
   {
     id: "kimi-k3.1-pro",
