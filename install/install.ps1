@@ -191,8 +191,8 @@ if (-not $SkipGit) {
 # --- 6. Verify -----------------------------------------------------------------
 Log "Verifying ..."
 $models = & $piCmd --list-models 2>&1 | Out-String
-if ($models -match "wallaby\s+kimi-k3") {
-  Log "OK: 'wallaby kimi-k3' is visible in pi --list-models"
+if ($models -match "wallaby\s+kimi-k3\.1-pro") {
+  Log "OK: 'wallaby kimi-k3.1-pro' is visible in pi --list-models"
 } else {
   Fail "wallaby model not visible in pi --list-models. Output:`n$models"
 }
@@ -210,7 +210,7 @@ try {
 Write-Host ""
 Write-Host "==================================================" -ForegroundColor Green
 Write-Host " Done. Open a NEW terminal, cd into a project, run: pi" -ForegroundColor Green
-Write-Host " Then: /model  ->  choose 'Kimi K3 (Wallaby)'" -ForegroundColor Green
+Write-Host " Then: /model  ->  choose 'Kimi K3.1 Pro (Wallaby)'" -ForegroundColor Green
 Write-Host " Uninstall:    uninstall.ps1  (same folder)" -ForegroundColor Green
 Write-Host "==================================================" -ForegroundColor Green
 Stop-Transcript | Out-Null
