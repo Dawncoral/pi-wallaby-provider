@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 — 2026-11-18
+
+- Mark `minimal` and `medium` as unavailable for K3.1 Pro and Highspeed in both the static catalog and live model discovery; K3 is unchanged. This avoids sending unsupported `reasoning_effort` values to the gateway.
+- Extend the discovery smoke test to cover the new mapping and the unchanged K3 behavior.
+
 ## Documentation updates (2026-11-18)
 
 - Verify the extension with pi 1.5.2 and document compatibility. Runtime code and package version are unchanged.

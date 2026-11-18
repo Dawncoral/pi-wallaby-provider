@@ -1,6 +1,6 @@
 {
   "name": "pi-wallaby-provider",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Wallaby provider for the pi coding agent — Kimi K3, K3.1 Pro and K3.1 Pro Highspeed, pay-per-token",
   "keywords": [
     "pi",

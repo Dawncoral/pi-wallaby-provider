@@ -43,6 +43,10 @@ With `WALLABY_API_KEY` set, the provider reads the gateway's `/models` and the p
 
 Verified with pi 1.5.2: the extension loads and model discovery works without changes to the provider code or package version.
 
+## Reasoning levels
+
+K3.1 Pro and Highspeed accept `low`, `high`, and `max`. `minimal` and `medium` are intentionally unmapped for those two models, so pi will not offer unsupported levels. K3 keeps its existing mappings.
+
 ## What you get
 
 | Model | Context | Max output | Pricing per 1M tokens | Official list discount |

@@ -32,10 +32,15 @@ type ModelSpec = {
   contextWindow: number;
   maxTokens: number;
   cost: Cost;
+  thinkingLevelMap?: Record<string, string | null>;
 };
 
 /** Kimi family defaults; the endpoint is curated, so unknown ids fall back here. */
 const KIMI_LIMITS = { contextWindow: 1048576, maxTokens: 131072 };
+
+// K3.1 Pro accepts only low/high/max. Leaving minimal and medium unmapped
+// lets pi fall back to its default reasoning effort instead of forcing medium.
+const PRO_THINKING_LEVEL_MAP = { minimal: null, medium: null };
 
 const STATIC_MODELS: ModelSpec[] = [
   {
@@ -53,6 +58,7 @@ const STATIC_MODELS: ModelSpec[] = [
     input: ["text", "image"],
     ...KIMI_LIMITS,
     cost: { input: 1.8, output: 9.0, cacheRead: 0.18, cacheWrite: 1.8 },
+    thinkingLevelMap: { ...PRO_THINKING_LEVEL_MAP },
   },
   {
     id: "kimi-k3.1-pro-highspeed",
@@ -61,6 +67,7 @@ const STATIC_MODELS: ModelSpec[] = [
     input: ["text", "image"],
     ...KIMI_LIMITS,
     cost: { input: 3.6, output: 18.0, cacheRead: 0.18, cacheWrite: 3.6 },
+    thinkingLevelMap: { ...PRO_THINKING_LEVEL_MAP },
   },
 ];
 
@@ -110,6 +117,9 @@ async function discoverModels(): Promise<ModelSpec[] | undefined> {
       input: ["text", "image"],
       ...KIMI_LIMITS,
       cost: { input, output, cacheRead, cacheWrite: input },
+      ...((id === "kimi-k3.1-pro" || id === "kimi-k3.1-pro-highspeed")
+        ? { thinkingLevelMap: { ...PRO_THINKING_LEVEL_MAP } }
+        : {}),
     });
   }
   return models.length ? models.sort((a, b) => a.id.localeCompare(b.id)) : undefined;

@@ -31,4 +31,11 @@ const models = registered[0].models;
 assert.deepEqual(models.map((m) => m.id), ["kimi-k3", "kimi-k3.1-pro", "kimi-k3.1-pro-highspeed"]);
 assert.equal(models[1].cost.input, 1.8);
 assert.equal(models[2].cost.output, 18);
+assert.deepEqual(models[1].thinkingLevelMap, { minimal: null, medium: null });
+assert.deepEqual(models[2].thinkingLevelMap, { minimal: null, medium: null });
+assert.equal(models[0].thinkingLevelMap, undefined);
+for (const id of ["kimi-k3.1-pro", "kimi-k3.1-pro-highspeed"]) {
+  assert.deepEqual(mod.STATIC_MODELS.find((m) => m.id === id).thinkingLevelMap, { minimal: null, medium: null });
+}
+assert.equal(mod.STATIC_MODELS[0].thinkingLevelMap, undefined);
 console.log("ok:", models.map((m) => m.id).join(", "));
