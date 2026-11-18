@@ -1,5 +1,9 @@
 # Changelog
 
+## Documentation updates (2026-11-18)
+
+- Verify the extension with pi 1.5.2 and document compatibility. Runtime code and package version are unchanged.
+
 ## 0.2.1 (2026-11-05)
 
 - Add GitHub Actions Trusted Publishing with OIDC. The workflow runs the

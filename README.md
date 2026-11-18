@@ -39,6 +39,10 @@ pi --model wallaby/kimi-k3.1-pro-highspeed
 
 With `WALLABY_API_KEY` set, the provider reads the gateway's `/models` and the public `pricing.json` at startup and registers whatever the endpoint currently serves. Models without a price entry are skipped. If the network or key is unavailable, it falls back to the static list below, so a fresh or offline session still works.
 
+## Compatibility
+
+Verified with pi 1.5.2: the extension loads and model discovery works without changes to the provider code or package version.
+
 ## What you get
 
 | Model | Context | Max output | Pricing per 1M tokens | Official list discount |
